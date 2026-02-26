@@ -1,46 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario</title>
+    <title>Mi Página Sencilla</title>
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1>Bienvenido a mi página</h1>
 
-<h2>Hola Bienvenido a mi pagina webs</h2>
+    <p>Esta es una página de ejemplo en HTML que contiene un título, un encabezado, un párrafo y un formulario sencillo.</p>
 
-<form action="" method="post">
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
-    <label for="">Nombre</label>
-    <input type="text" required minlength="3" placeholder="escribe tu nombre">
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
     <br>
+    <img src="descarga.jpg" alt="descarga">
 
-    <label for="">Correos</label>
-    <input type="email" placeholder="example@gmail.com">
-    <br>
+ 
+    <h2>Lista Ordenada numeros</h2>
+    <ol>
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+    </ol>
 
-    <label for="">Contraseña</label>
-    <input type="password" required pattern="[0-9]{10}">
-    <br>
+   
+    <h2>Lista Desordenada de frutas</h2>
+    <ul>
+        <li>papaya</li>
+        <li>tamarindo</li>
+        <li>marañon</li>
+    </ul>
 
-    <label for="msg">Mensajes</label>
-    <textarea name="msg" id=""></textarea>
-    <br>
 
-    <label for="">Fecha de Nacimiento</label>
-    <input type="date">
-    <br>
-
-    <fieldset>
-        <legend>Información Adicional</legend>
-
-        <label for="telefono">Teléfono</label>
-        <input type="tel">
-
-    </fieldset>
-    <br>
-
-    <button>Enviar</button>
-
-</form>
+    <h2>Tabla de Datos</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>López</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>sofia</td>
+            <td>mariana</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>andrea</td>
+            <td>Martínez</td>
+            <td>22</td>
+        </tr>
+    </table>
 
 </body>
 </html>
